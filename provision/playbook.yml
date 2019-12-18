@@ -22,12 +22,12 @@
     - debug:
         msg: World
 
-- name: Install Java
-  hosts: app_server
-  become: yes
-  become_user: root
-  roles:
-    - geerlingguy.java
+#- name: Install Java
+#  hosts: app_server
+#  become: yes
+#  become_user: root
+#  roles:
+#    - geerlingguy.java
 
 - name: Download Application from Repo
   hosts: app_server

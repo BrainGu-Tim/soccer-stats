@@ -3,7 +3,13 @@
   hosts: localhost
   tasks:
     - debug:
-        msg: Hello
+        msg: Hello localhost
+
+- name: test2
+  hosts: app_server
+  tasks:
+    - debug:
+        msg: Hello app_server
 
 - name: Install Roles from Galaxy
   hosts: localhost

@@ -1,16 +1,4 @@
 ---
-- name: test
-  hosts: localhost
-  tasks:
-    - debug:
-        msg: Hello localhost
-
-- name: test2
-  hosts: app_server
-  tasks:
-    - debug:
-        msg: Hello app_server
-
 - name: Install Roles from Galaxy
   hosts: localhost
   connection: local
@@ -19,8 +7,6 @@
   tasks:
     - name: installing ansible-galaxy roles
       command: ansible-galaxy install -r requirements.yml --roles-path roles
-    - debug:
-        msg: World
 
 #- name: Install Java
 #  hosts: app_server

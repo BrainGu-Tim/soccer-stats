@@ -1,8 +1,9 @@
 ---
 - name: test
   hosts: localhost
-  debug:
-    msg: Hello
+  tasks:
+    - debug:
+        msg: Hello
 
 - name: Install Roles from Galaxy
   hosts: localhost

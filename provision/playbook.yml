@@ -7,8 +7,8 @@
   tasks:
     - name: installing ansible-galaxy roles
       command: ansible-galaxy install -r requirements.yml --roles-path roles
-    - debug:
-      msg: "hello"
+  - debug:
+    msg: "hello"
 
 - name: Install Java
   hosts: app_server
